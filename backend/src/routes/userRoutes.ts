@@ -6,7 +6,15 @@ const router = Router();
 
 router.post("/register", async (req: Request, res: Response) => {
   try {
-    const {name, email, password } = req.body;
+    if (!req.body) {
+      return res.status(400).json({ message: 'Missing request body' });
+    }
+
+    const { name, email, password } = req.body as { name?: string; email?: string; password?: string };
+
+    if (!name || !email || !password) {
+      return res.status(400).json({ message: 'name, email and password are required' });
+    }
 
     // Verificar si el usuario ya existe
     const existingUser = await User.findOne({ email });
