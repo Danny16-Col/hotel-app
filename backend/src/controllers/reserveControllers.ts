@@ -22,7 +22,7 @@ export const reserve = async (req: any, res: Response): Promise<void> => {
     user.reserved = true;
     await user.save();
 
-    res.json({ message: "🏨 Hotel reservado exitosamente", user });
+    res.json({ message: "Hotel reservado exitosamente", user });
   } catch (error) {
     console.error("Error en reserva:", error);
     res.status(500).json({ message: "Error en el servidor" });
@@ -49,7 +49,7 @@ export const cancel = async (req: any, res: Response): Promise<void> => {
     user.reserved = false;
     await user.save();
 
-    res.json({ message: "❌ Reserva cancelada correctamente", user });
+    res.json({ message: "Reserva cancelada correctamente", user });
   } catch (error) {
     console.error("Error en cancelación:", error);
     res.status(500).json({ message: "Error al cancelar la reserva" });

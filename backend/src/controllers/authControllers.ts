@@ -7,6 +7,7 @@ import { Types } from "mongoose";
 
 const generateToken = (id: string | Types.ObjectId): string => {
   return jwt.sign({ id: id.toString() }, process.env.JWT_SECRET as string, { expiresIn: "1d" });
+
 };
 
   //  Registro
@@ -32,15 +33,15 @@ export const register = async (req: Request,res: Response,next: NextFunction): P
               name: newUser.name,              
               email: newUser.email,
             }
+
         });
+
     }catch (err) {
         console.error("Error en register:", err);
-      
         res.status(500).json({ message: "Error en el servidor" });
     }
 
   };
-
 //login
 export const login = async (req, res,next) => {
     try {
@@ -59,6 +60,7 @@ export const login = async (req, res,next) => {
         name: user.name,
         email: user.email,
         },token,
+        
     });
 
     } catch (err) {

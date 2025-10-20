@@ -17,7 +17,7 @@ server.use(express.json());
 connectDB();
 
 server.use('/api/auth',userRoutes)
-server.use('api/reserve',reserveRoutes)
+server.use('/api/reserve',reserveRoutes)
 // Puerto
 const PORT: number = Number(process.env.PORT) || 5000;
 
