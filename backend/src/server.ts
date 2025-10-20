@@ -3,6 +3,7 @@ import { connectDB } from './config/db';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import userRoutes from './routes/userRoutes';
+import reserveRoutes from './routes/reserveRoutes';
 
 dotenv.config();
 
@@ -15,7 +16,8 @@ server.use(express.json());
 // Conexión a MongoDB
 connectDB();
 
-server.use('/api/user',userRoutes)
+server.use('/api/auth',userRoutes)
+server.use('api/reserve',reserveRoutes)
 // Puerto
 const PORT: number = Number(process.env.PORT) || 5000;
 
