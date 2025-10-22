@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api/auth";
+const API_URL = "https://hotel-app-backend-eg1b.onrender.com/api/auth";
 
 //registro
 export const registerUser = async (name: string, email: string, password: string) => {

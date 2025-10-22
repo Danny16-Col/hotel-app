@@ -1,5 +1,5 @@
 //Api
-const API_URL = "http://localhost:5000/api/reserve";
+const API_URL = "https://hotel-app-backend-eg1b.onrender.com/api/reserve";
 
 // Función para reservar hotel
 export const reserveHotel = async (id: string) => {
