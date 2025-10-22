@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Hotel Ocean View",
+    "city": "Cartagena",
+    "price": 220000,
+    "image": "/img/hotel1.jpg",
+    "description": "Hotel frente al mar con piscina infinita y spa."
+  },
+  {
+    "id": 2,
+    "name": "Mountain Lodge",
+    "city": "Medellín",
+    "price": 180000,
+    "image": "/img/hotel2.jpg",
+    "description": "Cabañas acogedoras con vista panorámica a las montañas."
+  },
+  {
+    "id": 3,
+    "name": "City  Hotel",
+    "city": "Bogotá",
+    "price": 250000,
+    "image": "/img/hotel3.jpg",
+    "description": "Hotel moderno en el centro de la ciudad, cerca de los mejores restaurantes."
+  },
+  {
+    "id": 4,
+    "name": "Resort Paradise",
+    "city": "San Andrés",
+    "price": 300000,
+    "image": "/img/hotel4.jpg",
+    "description": "Resort todo incluido en la isla, con playa privada y deportes acuáticos."
+  },
+  {
+    "id": 5,
+    "name": "Desert Oasis Retreat",
+    "city": "La Guajira",
+    "price": 210000,
+    "image": "/img/hotel5.jpg",
+    "description": "Retiro en el desierto con glamping de lujo y vistas al cielo estrellado."
+  },
+  {
+    "id": 6,
+    "name": "Jungle Hideaway Hotel",
+    "city": "Amazonas",
+    "price": 195000,
+    "image": "/img/hotel6.jpg",
+    "description": "Lodge ecológico en la selva con excursiones guiadas y contacto con la naturaleza."
+  },
+  {
+    "id": 7,
+    "name": "Urban Chic Suites",
+    "city": "Cali",
+    "price": 230000,
+    "image": "/img/hotel7.jpg",
+    "description": "Suites de diseño en zona de vida nocturna, ideal para escapadas urbanas."
+  },
+  {
+    "id": 8,
+    "name": "Historic Castle Inn",
+    "city": "Villa de Leyva",
+    "price": 175000,
+    "image": "/img/hotel8.jpg",
+    "description": "Posada histórica en un castillo restaurado, ambiente clásico y tranquilo."
+  },
+  {
+    "id": 9,
+    "name": "Beachfront Bungalows",
+    "city": "Barú",
+    "price": 260000,
+    "image": "/img/hotel9.jpg",
+    "description": "Bungalows frente al mar, ideales para luna de miel o escapada romántica."
+  }
+]

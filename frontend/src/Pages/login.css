@@ -1,0 +1,83 @@
+.registro-card {
+    background-color: var(--color-card-bg); /* fondo de tarjeta elegante */
+    padding: var(--padding-lg);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-lg);
+    max-width: 400px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--margin-md);
+    transition: transform var(--transition-fast);
+
+}
+.registro-card:hover {
+    transform: translateY(-5px);
+
+}
+.registro-card h2 {
+    background: rgba(61,62,66,0.7);
+    width: 100%;
+    border-radius: var(--border-radius-md);
+    font-family: var(--font-heading);
+    font-size: var(--font-size-xl);
+    color: var(--color-primary);
+    margin-bottom: var(--margin-md);
+    text-align: center;
+
+}
+.registro-card label {
+    font-size: var(--font-size-md);
+    color: var(--color-text);
+    margin-bottom: var(--margin-sm);
+
+}
+.registro-card input {
+    display: flex;
+    flex-direction: column;
+    gap: var(--margin-md);
+    width: 100%;
+    padding: var(--padding-sm);
+    border-radius: var(--border-radius-sm);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--color-text);
+    font-size: var(--font-size-base);
+    outline: none;
+    transition: border-color var(--transition-fast), background-color var(--transition-fast);
+
+}
+.registro-card input:focus {
+    border-color: var(--color-purple);
+    background-color: rgba(255, 255, 255, 0.1);
+
+}
+.registro-card button {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    font-weight: 600;
+    padding: var(--padding-md);
+    border: none;
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+    transition: background-color var(--transition-fast), transform var(--transition-fast);
+
+}
+.registro-card button:hover {
+    background-color: var(--color-purple);
+    transform: translateY(-2px);
+
+}
+@media (max-width: 500px) {
+    .registro-card {
+        margin: 20px;
+        padding: var(--padding-md);
+    
+    }
+
+}

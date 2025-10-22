@@ -1,0 +1,72 @@
+:root {
+  --color-bg: linear-gradient(
+    90deg, 
+    rgba(18, 18, 22, 1) 0%, 
+    rgba(31, 32, 35, 1) 20%, 
+    rgba(43, 44, 47, 1) 40%, 
+    rgba(54, 55, 58, 1) 60%, 
+    rgba(61, 62, 66, 1) 80%, 
+    rgba(61, 62, 66, 1) 100%
+  
+    ); 
+  --color-primary: #1e90ff;      /* azul para botones, links, acentos */
+  --color-secondary: #f3f3f3;    /* texto secundario / hover */
+  --color-text: #ffffff;          /* texto principal */
+  --color-text-muted: #bbbbbb;    /* texto menos importante */
+  --color-black: #000000;         /* para overlays o sombras */
+  --color-purple: #8a2be2;        /* morado elegante para enlaces y hover */
+  --color-card-bg: rgba(25, 25, 28, 0.85); /* tarjetas o contenedores */
+  /* ===============================
+     Tipografía
+     =============================== */
+  --font-base: 'Arial, sans-serif';
+  --font-heading: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-size-base: 16px;
+  --font-size-sm: 14px;
+  --font-size-md: 18px;
+  --font-size-lg: 24px;
+  --font-size-xl: 32px;
+  --font-size-xxl: 48px;
+  --line-height: 1.5;
+  /* ===============================
+     Espaciados
+     =============================== */
+  --padding-general: 1rem;
+  --padding-sm: 0.5rem;
+  --padding-md: 1.5rem;
+  --padding-lg: 2rem;
+
+  --margin-general: 1rem;
+  --margin-sm: 0.5rem;
+  --margin-md: 1.5rem;
+  --margin-lg: 2rem;
+  /* ===============================
+     Bordes y radios
+     =============================== */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  /* ===============================
+     Sombras
+     =============================== */
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.2);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.3);
+  --shadow-lg: 0 8px 20px rgba(0,0,0,0.4);
+  /* ===============================
+     Transiciones
+     =============================== */
+  --transition-fast: 0.2s ease-in-out;
+  --transition-normal: 0.4s ease-in-out;
+  --transition-slow: 0.6s ease-in-out;
+
+}
+body {
+  margin: 0;
+  font-family: var(--font-base);
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: var(--line-height);
+  min-height: 100vh;
+
+}

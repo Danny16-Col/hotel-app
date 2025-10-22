@@ -1,0 +1,35 @@
+header {
+  background-color: rgba(18,18,22,0.9);
+  box-shadow: var(--shadow-md);
+  padding: var(--padding-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+ 
+  height: 50px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+header a {
+  color: var(--color-text);   
+  font-size: var(--font-size-md);       
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color var(--transition-fast);
+
+}
+header a:hover {
+  color: var(--color-purple);         
+
+}
