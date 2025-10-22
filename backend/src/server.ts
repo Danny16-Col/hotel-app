@@ -9,8 +9,19 @@ dotenv.config();
 
 const server = express();
 
+// Configura CORS para permitir tu dominio de Vercel
+const allowedOrigins = [
+  "https://hotel-app-psi-three.vercel.app", // tu frontend en Vercel
+];
+
 // Middlewares
-server.use(cors());
+server.use(
+  cors({
+    origin: allowedOrigins,
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
 server.use(express.json());
 
 // Conexión a MongoDB
